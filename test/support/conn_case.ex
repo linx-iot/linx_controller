@@ -1,4 +1,4 @@
-defmodule LinxController.ConnCase do
+defmodule LinxCntrlr.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,21 +20,21 @@ defmodule LinxController.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      alias LinxController.Repo
+      alias LinxCntrlr.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import LinxController.Router.Helpers
+      import LinxCntrlr.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint LinxController.Endpoint
+      @endpoint LinxCntrlr.Endpoint
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(LinxController.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(LinxCntrlr.Repo, [])
     end
 
     {:ok, conn: Phoenix.ConnTest.conn()}

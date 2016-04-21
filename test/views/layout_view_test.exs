@@ -1,3 +1,3 @@
-defmodule LinxController.LayoutViewTest do
-  use LinxController.ConnCase, async: true
+defmodule LinxCntrlr.LayoutViewTest do
+  use LinxCntrlr.ConnCase, async: true
 end

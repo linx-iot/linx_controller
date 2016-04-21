@@ -1,4 +1,4 @@
-defmodule LinxController.Mixfile do
+defmodule LinxCntrlr.Mixfile do
   use Mix.Project
 
   def project do
@@ -17,7 +17,7 @@ defmodule LinxController.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {LinxController, []},
+    [mod: {LinxCntrlr, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :postgrex]]
   end

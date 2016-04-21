@@ -1,5 +1,5 @@
-defmodule LinxController.PageControllerTest do
-  use LinxController.ConnCase
+defmodule LinxCntrlr.PageControllerTest do
+  use LinxCntrlr.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

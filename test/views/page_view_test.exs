@@ -1,3 +1,3 @@
-defmodule LinxController.PageViewTest do
-  use LinxController.ConnCase, async: true
+defmodule LinxCntrlr.PageViewTest do
+  use LinxCntrlr.ConnCase, async: true
 end

@@ -1,3 +1,3 @@
-defmodule LinxController.LayoutView do
-  use LinxController.Web, :view
+defmodule LinxCntrlr.LayoutView do
+  use LinxCntrlr.Web, :view
 end

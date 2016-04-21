@@ -1,7 +1,7 @@
-defmodule LinxController.Endpoint do
+defmodule LinxCntrlr.Endpoint do
   use Phoenix.Endpoint, otp_app: :linx_controller
 
-  socket "/socket", LinxController.UserSocket
+  socket "/socket", LinxCntrlr.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -35,5 +35,5 @@ defmodule LinxController.Endpoint do
     key: "_linx_controller_key",
     signing_salt: "iJeRU5iV"
 
-  plug LinxController.Router
+  plug LinxCntrlr.Router
 end

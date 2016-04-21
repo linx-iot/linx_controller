@@ -1,5 +1,5 @@
-defmodule LinxController.ErrorView do
-  use LinxController.Web, :view
+defmodule LinxCntrlr.ErrorView do
+  use LinxCntrlr.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

@@ -1,12 +1,12 @@
-defmodule LinxController.Web do
+defmodule LinxCntrlr.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use LinxController.Web, :controller
-      use LinxController.Web, :view
+      use LinxCntrlr.Web, :controller
+      use LinxCntrlr.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule LinxController.Web do
     quote do
       use Phoenix.Controller
 
-      alias LinxController.Repo
+      alias LinxCntrlr.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import LinxController.Router.Helpers
-      import LinxController.Gettext
+      import LinxCntrlr.Router.Helpers
+      import LinxCntrlr.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule LinxController.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import LinxController.Router.Helpers
-      import LinxController.ErrorHelpers
-      import LinxController.Gettext
+      import LinxCntrlr.Router.Helpers
+      import LinxCntrlr.ErrorHelpers
+      import LinxCntrlr.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule LinxController.Web do
     quote do
       use Phoenix.Channel
 
-      alias LinxController.Repo
+      alias LinxCntrlr.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
-      import LinxController.Gettext
+      import LinxCntrlr.Gettext
     end
   end
 

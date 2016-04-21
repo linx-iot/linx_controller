@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :linx_controller, LinxController.Endpoint,
+config :linx_controller, LinxCntrlr.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "0+iAb94tozTLqFeTUHZIK+v7L79yl7QZDlRYSpFv7LxwBNtJfFxnEPRUz0f94WcY",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: LinxController.PubSub,
+  pubsub: [name: LinxCntrlr.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

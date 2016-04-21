@@ -1,5 +1,5 @@
-defmodule LinxController.Router do
-  use LinxController.Web, :router
+defmodule LinxCntrlr.Router do
+  use LinxCntrlr.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule LinxController.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", LinxController do
+  scope "/", LinxCntrlr do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", LinxController do
+  # scope "/api", LinxCntrlr do
   #   pipe_through :api
   # end
 end

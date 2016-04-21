@@ -1,4 +1,4 @@
-defmodule LinxController.ErrorHelpers do
+defmodule LinxCntrlr.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -26,10 +26,10 @@ defmodule LinxController.ErrorHelpers do
     #
     #     dngettext "errors", "1 file", "%{count} files", count
     #
-    Gettext.dngettext(LinxController.Gettext, "errors", msg, msg, opts[:count], opts)
+    Gettext.dngettext(LinxCntrlr.Gettext, "errors", msg, msg, opts[:count], opts)
   end
 
   def translate_error(msg) do
-    Gettext.dgettext(LinxController.Gettext, "errors", msg)
+    Gettext.dgettext(LinxCntrlr.Gettext, "errors", msg)
   end
 end
